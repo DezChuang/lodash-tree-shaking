@@ -11,7 +11,6 @@ module.exports = {
         rules: [
             {
                 test: /\.(?:ts)$/,
-                // test: /\.(?<typescript>ts|tsx)$/u,
                 exclude: /node_modules/,
                 use: [
                     {

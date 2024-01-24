@@ -8,7 +8,7 @@
 
 // console.log(process(1, 2));
 
-import { composeString } from './util/custom';
+import { composeString } from './util/custom.ts';
 
 const init = () => {
     const result = composeString('Hello', 'World');
