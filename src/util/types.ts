@@ -1,13 +1,13 @@
-type TestA = {
+type TestType = {
     a: string;
     b: number;
     c: boolean;
 };
 
-enum TestBEnum {
+enum TestEnum {
     A = 'a',
     B = 'b',
     C = 'c',
 }
 
-export { TestA, TestBEnum };
+export { TestType, TestEnum };
