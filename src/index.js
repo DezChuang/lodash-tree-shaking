@@ -1,7 +1,10 @@
-import * as utils from "./util";
 
-const process = (a, b) => {
-    return utils.add(a, b) / utils.add(a, b);
+const loadUtilA = () => import('./util/a');
+const loadUtilB = () => import('./util/b');
+
+const process = async (a, b) => {
+    const utilModule = await loadUtilB();
+    return utilModule.add(a, b) / utilModule.add(a, b);
 };
 
 console.log(process(1, 2));
